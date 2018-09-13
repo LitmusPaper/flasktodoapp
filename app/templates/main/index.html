@@ -53,7 +53,11 @@
                 {% endif %}
                 <th> {{todo.id}}</th>
                 <td> {{todo.title}} </td>
-                <td> <a href="/change/{{todo.id}}" class="btn btn-primary">Dəyiş</a></td>
+                <td> 
+                  <a href="/change/{{todo.id}}" class="btn btn-primary">Dəyiş</a>
+                  <a href="/delete/{{todo.id}}" class="btn btn-danger">Sil</a>
+                
+                </td>
                 
               </tr>
                 {% endfor %}
